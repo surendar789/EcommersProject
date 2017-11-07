@@ -23,7 +23,7 @@ import com.niit.TechWorldBackEnd.model.Supplier;
 import com.niit.TechWorldBackEnd.model.User;
 
 @Configuration
-@ComponentScan("com.niit")
+@ComponentScan("com.niit.TechWorldBackEnd")
 @EnableTransactionManagement
 public class ApplicationContextConfig {
 
@@ -63,7 +63,7 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Product.class);
 		sessionBuilder.addAnnotatedClass(My_Cart.class);
 		sessionBuilder.addAnnotatedClass(Contact.class);
-		sessionBuilder.scanPackages("com.niit");
+		sessionBuilder.scanPackages("com.niit.TechWorldBackEnd");
 
 		return sessionBuilder.buildSessionFactory();
 	}
