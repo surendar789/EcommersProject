@@ -26,7 +26,7 @@ public class CategoryDAOTestCase {
 	@BeforeClass
 	public static void initialize() {
 		context = new AnnotationConfigApplicationContext();
-		context.scan("com.niit.TechWorldBackEnd");
+		context.scan("com.niit");
 		context.refresh();
 
 		categoryDAO = (CategoryDAO) context.getBean("categoryDAO");

@@ -32,10 +32,10 @@ public class ApplicationContextConfig {
 
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
-		dataSource.setUrl("jdbc:h2:tcp://localhost/~/niit");
+		dataSource.setUrl("jdbc:h2:tcp://localhost/~/TechWorld");
 		dataSource.setDriverClassName("org.h2.Driver");
-		dataSource.setUsername("sa");
-		dataSource.setPassword("sa");
+		dataSource.setUsername("TechWorld");
+		dataSource.setPassword("");
 
 		return dataSource;
 	}
@@ -63,7 +63,7 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Product.class);
 		sessionBuilder.addAnnotatedClass(My_Cart.class);
 		sessionBuilder.addAnnotatedClass(Contact.class);
-		sessionBuilder.scanPackages("com.niit.TechWorldBackEnd");
+		sessionBuilder.scanPackages("com.niit");
 
 		return sessionBuilder.buildSessionFactory();
 	}

@@ -33,7 +33,7 @@ public class My_CartDAOTestCase {
 	public static void initialize()
 	{
 		context = new AnnotationConfigApplicationContext();
-		context.scan("com.niit.TechWorldBackEnd");
+		context.scan("com.niit");
 		context.refresh();
 		
 		my_CartDAO =  (My_CartDAO) context.getBean("my_CartDAO");
