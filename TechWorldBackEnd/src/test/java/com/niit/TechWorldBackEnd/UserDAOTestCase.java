@@ -36,6 +36,7 @@ public class UserDAOTestCase {
 		user = (User) context.getBean("user");
 		
 
+		
 	}
 
 	/*@Test
