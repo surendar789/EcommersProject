@@ -31,6 +31,7 @@ public class SupplierDAOTestCase {
 		supplierDAO = (SupplierDAO) context.getBean("supplierDAO");
 
 		supplier = (Supplier) context.getBean("supplier");
+		
 
 	}
 
